@@ -30,6 +30,7 @@ function sumArray(ary) {
   for(var i = 0; i < ary.length; i++) {
     result += ary[i];
   }
+  console.table(ary);
   var prob4 = document.getElementById('prob4');
   prob4.textContent = '"' + ary + ' was passed as an array of numbers, and ' + result + ' is their sum."';
   return result;
@@ -40,6 +41,7 @@ function multiplyArray(arry) {
   for(var i = 0; i < arry.length; i++) {
     total *= arry[i];
   }
+  console.table(arry);
   var prob5 = document.getElementById('prob5');
   prob5.textContent = '"The numbers ' + arry + ' have a product of ' + total + '."';
 }
